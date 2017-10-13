@@ -1,0 +1,16 @@
+name: fetch-charm-gerrit-changeref  
+version: 1.0
+summary: Fetch a charm patchset from review.openstack.org
+description: >
+   This package provides fetch-charm-gerrit-changeref
+confinement: classic
+grade: stable
+
+apps:
+  fetch-charm-gerrit-changeref:
+    command: fetch-charm-gerrit-changeref.sh
+
+parts:
+  main:
+    plugin: dump
+    source: . 
